@@ -302,6 +302,22 @@
     opacity: 0.95;
     transform: translate(-50%, -50%) rotate(-9deg) scale(1);
   }
+  .sr-letter-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--ink);
+    color: #F1EEE6;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 4px 9px;
+    border-radius: 6px;
+    z-index: 5;
+    opacity: 0.88;
+  }
   .sr-letter-caption {
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -550,6 +566,7 @@
 
       <div class="sr-letter-wrap">
         <div class="sr-letter" id="sr-letter">
+          <div class="sr-letter-badge">Simulación</div>
           <div class="sr-stamp">SIMULACRO</div>
           <div class="sr-flag sr-flag-1">Dominio casi idéntico, no oficial</div>
           <div class="sr-flag sr-flag-2">Urgencia artificial + amenaza de sanción</div>
@@ -568,7 +585,7 @@
             <p>Acceda a su expediente: <span class="sr-letter-link">sede.aeat-gestion.es/notificaciones/exp-88213</span></p>
           </div>
         </div>
-        <p class="sr-letter-caption">Toca (o pasa el cursor sobre) la carta — así de rápido se revela un simulacro real.</p>
+        <p class="sr-letter-caption"><b>Ejemplo simulado — no es una comunicación real de la AEAT.</b> Toca (o pasa el cursor sobre) la carta — así de rápido se revela un simulacro real.</p>
       </div>
     </div>
 
@@ -733,6 +750,10 @@
   }
 })();
 </script>
+
+<!-- Cloudflare Web Analytics -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b0c2129280a64ff5b17b0c6e7ab4abd1"}'></script>
+<!-- End Cloudflare Web Analytics -->
 
 </body>
 </html>
